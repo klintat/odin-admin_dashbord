@@ -27,8 +27,18 @@
 
 .header {
     background-color: var(--header-bg-color);
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template: 1fr 2fr / 2fr 1fr;
 }
 
 .main-content {
     background-color: var(--main-content-bg-color);
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.project-container {
+    grid-row: 1 / 3;
 }
