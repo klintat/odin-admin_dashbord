@@ -1,7 +1,7 @@
 :root {
     --sidebar-bg-color: #09a3c9;
     --header-bg-color: #ffffff;
-    --main-content-bg-color: gray;
+    --main-content-bg-color: #e5e7eb;
 }
 
 * {
@@ -34,6 +34,7 @@
     height: 100%;
     width: 100%;
     grid-template: 1fr 2fr / 2fr 1fr;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.4)
 }
 
 .main-content {
@@ -51,8 +52,29 @@
 }
 
 .item {
-    border: 2px solid black;
+    display: grid;
+    grid-template-rows: 20% 40% 40%;
     border-radius: 10px;
+    background: #ffffff;
+    padding: 0 35px;
+}
+
+.item-tittle {
+    align-self: end;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.item-text {
+    font-size: 18px;
+    color: gray;
+}
+
+.extra-icons-container {
+    align-content: center;
+    width: 100%;
+    text-align: end;
 }
 
 .other-side-container {
@@ -104,4 +126,87 @@
     grid-template-columns: 30% 70%;
     align-items: center;
     grid-row: 4 / 5;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    justify-items: center;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    height: 3vh;
+    background-color: #e5e7eb;
+    border: none;
+    border-radius: 20px;
+}
+
+.search-container {
+    margin: auto 0;
+}
+
+.btn-search {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.login-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.login-container > .cat-icon {
+    grid-column: 2/3;
+}
+
+.greating-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.cat-icon {
+    grid-row: 1 / 3;
+    justify-self: center;
+    align-self: center;
+    border-radius: 40px;
+}
+
+.greeting-text {
+    align-self: end;
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn {
+    height: 4vh;
+    border: none;
+    border-radius: 30px;
+    background-color: darkturquoise;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-rows: 7% 93%;
+    margin: 0 15px 4rem 15px;
+}
+
+.project-tittle {
+    align-self: end;
+    font-size: 22px;
+    font-weight: 600;
 }
